@@ -9,3 +9,8 @@
 ### Project Structure in Android
 - [Create](https://developer.android.com/studio/projects/create-project) your first android application
 - [Project Structure](https://developer.android.com/studio/projects#:~:text=Configure%20Your%20Build.-,Project%20structure%20settings,NDK%20that%20your%20project%20uses.) of an Android Application
+
+### Views and ViewGroup in Android
+- [Click here](https://developer.android.com/reference/android/view/View) to read more of the View
+- [Click here](https://developer.android.com/reference/android/view/ViewGroup) to read more of the ViewGroup
+- [Overall Picture to Understand the concept well](https://drive.google.com/file/d/1_YBPSC1hDbb8da8SIr8KATVjtDr6Pzpf/view?usp=sharing)
