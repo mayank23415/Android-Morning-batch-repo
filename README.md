@@ -13,5 +13,5 @@
 ### Views and ViewGroup in Android
 - [Click here](https://developer.android.com/reference/android/view/View) to read more of the View
 - [Click here](https://developer.android.com/reference/android/view/ViewGroup) to read more of the ViewGroup
-- [Overall Picture to Understand the concept well](https://drive.google.com/file/d/1_YBPSC1hDbb8da8SIr8KATVjtDr6Pzpf/view?usp=sharing
+- [Overall Picture to Understand the concept well](https://drive.google.com/file/d/1_YBPSC1hDbb8da8SIr8KATVjtDr6Pzpf/view?usp=sharing)
 - Learn More about TextView [here](https://developer.android.com/reference/android/widget/TextView)
