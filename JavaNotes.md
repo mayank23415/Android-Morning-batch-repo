@@ -129,3 +129,95 @@ Enter a Number:
 14
 26
 ```
+***Control Statements***
+- Three Types of Control Statements in Java
+	- Decision Making Statements
+		- if Statement
+		- switch Statement
+	- Loop Statements
+		- for
+		- while
+		- for-each
+		- do-while
+	- Jump Statements
+		- break
+		- continue
+
+***Relational Operators***
+*>,<,>=,<=,==,!=*
+***Logical Operators***
+*&&,||,!*
+
+***if statement example***
+```java
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args){
+	    int a,b;
+	    Scanner s = new Scanner(System.in);
+	    System.out.println("Enter a Number: ");
+	    a = s.nextInt();
+	    if(a>0){
+	        System.out.println("POSITIVE");
+	    }else{
+	        System.out.println("Negative");
+	    }
+	    
+	}
+}
+```
+
+*output*
+```
+Enter a Number: 
+-89
+Negative
+```
+
+***Combining two or more conditions as one - Example***
+```java
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args){
+	    int a,b;
+	    Scanner s = new Scanner(System.in);
+	    System.out.println("Enter a Number: ");
+	    a = s.nextInt();
+	    System.out.println("Enter a Number: ");
+	    b = s.nextInt();
+	    if(a>0 && b<0){
+	        System.out.println("a is pos and b is not");
+	    }else{
+	        System.out.println("something is fishy!!!");
+	    }
+	    
+	}
+}
+```
+*Output*
+```
+Enter a Number: 
+10
+Enter a Number: 
+20
+something is fishy!!!
+```
+***Assignment - 1***
+```
+A Certain grade of meat has to be graded according to the following conditions
+Condition 1: if the meat is weights more than 10kgs
+Condition 2: if the meat is having less than 0.5 days of age
+Condition 3: if the meat is ready to cook
+
+1. if all the conditions are matched, the meat can be rated with 10
+2. if the first two conditions meet and the third condition fails, the meat can be given 9 rating
+3. if the second, third conditions are met, the rating can be 8
+4. if the first and third conditions are only met, the rating can be 7.
+5. if the only one condition is meeting and the other conditions are failing, the meat can be rated as 6.
+```
+
+
