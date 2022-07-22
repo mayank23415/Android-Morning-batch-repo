@@ -209,7 +209,7 @@ something is fishy!!!
 ***Assignment - 1***
 ```
 A Certain grade of meat has to be graded according to the following conditions
-Condition 1: if the meat is weights more than 10kgs
+Condition 1: if the meat  weights more than 10kgs
 Condition 2: if the meat is having less than 0.5 days of age
 Condition 3: if the meat is ready to cook
 
@@ -220,4 +220,162 @@ Condition 3: if the meat is ready to cook
 5. if the only one condition is meeting and the other conditions are failing, the meat can be rated as 6.
 ```
 
+***Read the Values of boolean variable***
+```java
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        boolean tf;
+        Scanner s = new Scanner(System.in);
+        tf = s.nextBoolean();
+        System.out.println(tf);
+    }
+}
+```
+***Switch in Java***
+*Syntax*
+```java
+switch(variable){
+	case 0:
+		// write code here
+		break;
+	case 1:
+		// write code here
+		break;
+	default:
+		// write code here
+}
+```
+***Example - Switch Program***
+```java
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Choose Your option\n1. Covid Positive\n2. Covid Negative\n3. Haven't effected from Covid yet");
+        int a = s.nextInt();
+        switch(a){
+            case 1:
+                System.out.println("You need to take medicines");
+                System.out.println("You need to stay away from others");
+                break;
+            case 2:
+                System.out.println("You need to go for regular health chekup");
+                System.out.println("COVID effects the lungs badly!");
+                break;
+            case 3:
+                System.out.println("You need to be careful! so that you won't get effected!");
+                break;
+            default:
+                System.out.println("Incorrect Option");
+                break;
+        }
+    }
+}
+```
 
+*Output*
+```
+Choose Your option
+1. Covid Positive
+2. Covid Negative
+3. Haven't effected from Covid yet
+1
+You need to take medicines
+You need to stay away from others
+```
+
+***Loops in Java***
+- When you have to repeat a certain set of statements in a program for a certain number of times or until a condition becomes false, we can make use of loops
+- Four Loops in JAVA
+	- while
+	- do-while
+	- for
+	- for-each
+***Syntax of While***
+```java
+while(Condition){
+  //statements
+}
+```
+***Example - While***
+```java
+class Main{
+    public static void main(String args[]){
+            int i = 0;
+            while(i<=10){
+                System.out.print(i+" ");
+                i++;
+            }
+    }
+}
+```
+*Output*
+```
+0 1 2 3 4 5 6 7 8 9 10 
+```
+
+***Assignment-2***
+```
+Write a program to print all the prime numbers between any given range of numbers.
+```
+
+***Decide if a given number is prime or not using while loop***
+```java
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        System.out.println("Enter a Number");
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        /*Prime Number is any number that has 1 and itself as the factors*/
+        int i = 2;
+        int factors = 0;
+        while(i<a){
+            if(a%i == 0){
+                factors++;
+            }
+            i++;
+        }
+        if(factors>0){
+            System.out.println("NOT PRIME NUMBER");
+        }else{
+            System.out.println("PRIME NUMBER");
+        }
+    }
+}
+```
+*Output*
+```
+Enter a Number
+13
+PRIME NUMBER
+```
+
+***Print all the even numbers between any given range of numbers***
+```java
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter Lower bound:");
+        int lowerBound = s.nextInt();
+        System.out.println("Enter Upper bound:");
+        int upperBound = s.nextInt();
+        while(lowerBound<=upperBound){
+            if(lowerBound%2 == 0){
+                System.out.print(lowerBound+" ");
+            }
+            lowerBound++;
+        }
+    }
+}
+```
+*Output*
+```
+Enter Lower bound:
+20
+Enter Upper bound:
+50
+20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50
+```
