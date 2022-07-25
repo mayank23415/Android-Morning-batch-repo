@@ -379,3 +379,209 @@ Enter Upper bound:
 50
 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50
 ```
+
+***do-while loop***
+*Syntax*
+```java
+do{
+// Statements
+}while(condition);
+```
+*Difference between While and do-while*
+```java
+public class Main
+{
+	public static void main(String[] args) {
+		int x = 0;
+		while(x>0){
+		    System.out.println("Hello, My value is 0");
+		}
+		
+		do{
+		  System.out.println("Hello, My value is 0");  
+		}while(x>0);
+		
+	}
+}
+```
+*Output*
+```
+Hello, My value is 0
+```
+
+*Program to Print 1 to 10 Numbers using do-while*
+```java
+		int x = 1;
+		do{
+		  System.out.print(x+" ");  
+		  x++;
+		}while(x<11);
+```
+*Output*
+```
+1 2 3 4 5 6 7 8 9 10
+```
+
+***Assignment -3 ***
+```
+print the factorial of any given number
+```
+
+***For loop***
+```java
+for(initilization;condition;increment/decrement)
+{
+// statements
+}
+```
+
+```java
+		for(int x = 1; x<11; x++){
+		    System.out.print(x+" ");
+		}
+```
+*Output*
+```
+1 2 3 4 5 6 7 8 9 10
+```
+
+***Assignment -4***
+```
+you are given number, decide if it is special Number or not. Special number is a number when the individual digits are added, generates an even number
+```
+
+***Java Arrays***
+- An array is a collection of similar type of data elements under a single name and those elements will be stored in contigeous memory locations.
+- You can put or get the elements from an array using the indcies of the array.
+- An Array index starts at 0 and ends at 1 less than the actual size.
+
+Two Kinds of Arrays
+- Single dim arrays
+- Multi dim arrays
+*Syntax of creating an array*
+```java
+int[] a = new int[10];
+```
+
+***Example -1 (Creating a static integer array)***
+```java
+public class Main
+{
+	public static void main(String[] args) {
+		// You can values of an array statically in the following way!
+		int a[] = new int[]{1,2,3,4,5,6,7,8,9,10};
+		
+		// you can access the individual elements of an array
+		// in the following way
+		System.out.println(a[2]);
+		
+		// if you want to change a particular value inside an array
+		a[9] = 100;
+		
+		//you can use a loop to access all the elements and print them
+		// a.length - returns the size of the array
+		for(int i=0; i<a.length;i++)
+		{
+		    System.out.print(a[i]+" ");
+		}
+	}
+}
+```
+*Output*
+```
+3
+1 2 3 4 5 6 7 8 9 100
+```
+***for-each loop***
+*Syntax*
+```java
+for(int b: collection_variable_name){
+// statements
+}
+```
+***Example***
+```java
+		for(int b : a)
+		{
+		    System.out.print(b+" ");
+		}
+```
+*Output*
+```
+3
+1 2 3 4 5 6 7 8 9 100
+```
+
+***JUMP Statements in JAVA***
+- break
+- continue
+
+*A ```break``` statements breaks the loop*
+```java
+class Main{
+    public static void main(String a[]){
+        for(int i = 1; i<11; i++){
+            System.out.print(i+" ");
+            if(i%3 == 0){
+                break;
+            }
+        }
+    }
+}
+```
+*Output*
+```
+1 2 3
+```
+
+*A ```Continue``` statement in java would allows us to go the next iteration skipping the code next to ```continue``` if there is any.*
+```java
+class Main{
+    public static void main(String a[]){
+        for(int i = 1; i<11; i++){
+            if(i%3 == 0){
+                continue;
+            }
+            System.out.print(i+" ");
+        }
+    }
+}
+```
+*output*
+```
+1 2 4 5 7 8 10
+```
+
+***Java OOPs Concepts***
+- OOPs --> Object oriented programming System
+- You cannot write a program without declaring classes
+- Everything is built around objects in Java.
+- Java is a Pure Object oriented programming language.
+
+***Important Concepts***
+- objects
+- classes
+- Inheritance
+- Polymophism
+- Abstration (interfaces)
+- Encapsulation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
