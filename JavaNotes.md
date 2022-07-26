@@ -566,8 +566,45 @@ class Main{
 - Abstration (interfaces)
 - Encapsulation
 
+***Object***
+- Any real world entity can be considered as an object if it exhibits properties and behavior. 
+- An object is an instance (Copy) of a class.
+	- Example: Dog (Properties - name, age, weight
+		        Behavior - barking, sleeping, swiming)
+	- All Properties will be variables in java
+	- All behaviors will be Methods(Functions) in java
+***Classes***
+- Class is a blueprint of an object
+	- classes does not occupy any space
+	- Only when you create an object for a class, then the memory is allocated. 
+- Always keep the first letter of the class name as a capital letter.
+***Syntax of Creating a class***
 
+```java
+class Dog{
+	// Properties - Variables 
+	// behaviors  - Methods
+}
+```
 
+***Example Class***
+```java
+class Dog{
+	// Properties
+	String name;
+	int age;
+	double weight;
+	
+	// Behaviors
+	public void barkAtStrangers(){
+		// Write functionality here.
+	}
+	
+	public void swagTail(){
+		// Write the Functionality here.
+	}
+}
+```
 
 
 
