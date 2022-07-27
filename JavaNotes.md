@@ -605,13 +605,171 @@ class Dog{
 	}
 }
 ```
+***Example - Creating a class and object***
+```java
+class Dog{
+    // Properties
+    String name;
+    int age;
+    
+    //Behaviors
+    public void bark(){
+        System.out.println(name+" Bow! Bow!");    
+    }
+    
+    public void swim(){
+        System.out.println("Swmming");
+    }
+}
 
+class Main{
+    public static void main(String args[]){
+        // Creating an Object
+        Dog tommy = new Dog();
+        tommy.name = "Tommy Hifigler";
+        tommy.age = 10;
+        tommy.bark();
+        tommy.swim();
+        
+        Dog d = new Dog();
+        d.name = "Jimmy";
+        d.age = 4;
+        d.bark();
+        d.swim();
+        
+        System.out.println(tommy.name);
+    }
+}
+```
+*Output*
+```
+Tommy Hifigler Bow! Bow!
+Swmming
+Jimmy Bow! Bow!
+Swmming
+Tommy Hifigler
+```
 
+***Constructors in Java***
+- At the time of initializing an object, if you want to initialize a few variables of that object, you can use constructor.
+- There is a Default constructor for every class that you create.
+- In Java, we can have mutliple constructors for the same class (Overloading constructors)
+- Types of Constructors
+	- Default Constructors (No-Arguments)
+	- Parameterized Constructors
 
+- Constructors look like methods but does not have return types.
+- The name of the constructor should be the same name as that of the class name.
 
+***Example-1***
+```java
+class Dog{
+    // Properties
+    String name;
+    int age;
+    
+    // Constructor
+    Dog(String n, int a){
+        name = n;
+        age = a;
+    }
+    
+    //Behaviors
+    public void bark(){
+        System.out.println(name+" Bow! Bow!");    
+    }
+    
+    public void swim(){
+        System.out.println("Swmming");
+    }
+}
 
+class Main{
+    public static void main(String args[]){
+        // Creating an Object
+        Dog tommy = new Dog("Tommy Hifigler",10);
+        tommy.bark();
+        tommy.swim();
+        
+        Dog d = new Dog("Jimmy",4);
+        d.bark();
+        d.swim();
+        
+        System.out.println(tommy.name);
+    }
+}
+```
+*Output*
+```
+Tommy Hifigler Bow! Bow!
+Swmming
+Jimmy Bow! Bow!
+Swmming
+Tommy Hifigler
+```
 
+***Example 2***
+```java
+class Student{
+    String name;
+    int age;
+    int student_id;
+    
+    Student(){
+        name = "Pavan";
+        age = 30;
+        student_id = 1;
+    }
+    
+    Student(String n, int a){
+        name = n;
+        age = a;
+    }
+    
+    Student(String n, int a, int id){
+        name = n;
+        age = a;
+        student_id = id;
+    }
+    
+    public void display(){
+        System.out.println(name+" "+age+" "+student_id);
+    }
+}
 
+class Main{
+    public static void main(String args[]){
+        Student s1 = new Student();
+        Student s2 = new Student("Rakesh",22);
+        Student s3 = new Student("Rajesh",21,121);
+        s2.student_id = 222;
+        
+        s1.display();
+        s2.display();
+        s3.display();
+    }
+}
+```
+*Output*
+```
+Pavan 30 1
+Rakesh 22 222
+Rajesh 21 121
+```
+
+***COMMAND LINE ARGUMENTS IN JAVA***
+- During the execution of the program, we can pass a few command line arguments. Please refer the examples below.
+***Example-1***
+```java
+class Cla{
+  public static void main(String args[]){
+      for(String a: args){
+        System.out.println(a);
+      }
+  }
+}
+```
+*output*
 
 
 
