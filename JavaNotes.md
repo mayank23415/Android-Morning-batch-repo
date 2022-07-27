@@ -773,7 +773,21 @@ class Cla{
 ![Reeference](/reference.png)
 
 
-
+***Example-2***
+```java
+class Cla{
+  public static void main(String args[]){
+    int sum = 0;
+    for(String a: args){
+      sum = sum + Integer.parseInt(a);
+    }
+    System.out.println(sum);
+    System.out.println(sum/args.length);
+  }
+}
+```
+*output*     
+![reference](/reference2.png)
 
 
 
