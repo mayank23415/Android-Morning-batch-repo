@@ -789,7 +789,152 @@ class Cla{
 *output*     
 ![reference](/reference2.png)
 
+***Inheritance in Java***
+- It is a mechanism in which one class acquires the properties and behaviors of another class.
+- The class that acquires the properties of another class is called Derived class or Sub class or Child Class
+- The class from which the properties are acquired is called Base class or Parent class or super class.
+- ```extends``` keyword is used to inherit the properties and behaviors of a class into another class. 
 
+***Types of Inheritance in Java***
+- Single Inheritance
+- Multi Level inheritance
+- Hierarchical inheritance
+- Java does not support Multiple Inheritance.(You cannot have two super classes for a subclass in java)
 
+***Example - Single Inheritance***
+```java
+import java.lang.Math;
+// single Inheritance
+// We will reuse the code so that new features are added to the Child class
+class Parent{
+    int a;
+    
+    public int square(){
+        return a*a;    
+    }
+}
 
+//child acquires all the properties of the parent.
+// In class child, you can add new features 
+// (new mehtods and Variables along with the parent class Variables and methods)
+class Child extends Parent{
+    double d;
+    public double squareRoot(){
+        return Math.sqrt(d);
+    }
+}
+
+class Main{
+    public static void main(String args[]){
+        Child c = new Child();
+        c.a = 10;
+        int x = c.square();
+        System.out.println(x);
+        
+        c.d = 9;
+        double a = c.squareRoot();
+        System.out.println(a);
+    }
+}
+```
+*Output*
+```
+100
+3.0
+```
+
+***Example - Multi Level inheritance***
+```java
+import java.lang.Math;
+// Multi level Inheritance
+// We will reuse the code so that new features are added to the Child class
+class Parent{
+    int a;
+    
+    public int square(){
+        return a*a;    
+    }
+}
+
+//child acquires all the properties of the parent.
+// In class child, you can add new features 
+// (new mehtods and Variables along with the parent class Variables and methods)
+class Child extends Parent{
+    double d;
+    public double squareRoot(){
+        return Math.sqrt(d);
+    }
+}
+
+class GrandChild extends Child{
+    double x,y;
+    public double num2Power(){
+        return Math.pow(x,y);
+    }
+}
+
+class Main{
+    public static void main(String args[]){
+        GrandChild c = new GrandChild();
+        c.a = 10;
+        int x = c.square();
+        System.out.println(x);
+        
+        c.d = 9;
+        double a = c.squareRoot();
+        System.out.println(a);
+        
+        c.x = 3;
+        c.y = 2;
+        double r = c.num2Power();
+        System.out.println(r);
+    }
+}
+```
+*Output*
+```
+100
+3.0
+9.0
+```
+***Example - Hierachical Inheritance***
+```java
+// Hirarchical Inheritance
+class Animal{
+    public void eat(){
+        System.out.println("Eating...");
+    }
+}
+
+class Dog extends Animal{
+    public void Bark(){
+        System.out.println("Bow Bow!");
+    }
+}
+
+class Cat extends Animal{
+    public void Shout(){
+        System.out.println("Meow! Meow!");
+    }
+}
+
+class Main{
+    public static void main(String a[]){
+        Cat c = new Cat();
+        c.Shout();
+        c.eat();
+        
+        Dog d = new Dog();
+        d.Bark();
+        d.eat();
+    }
+}
+```
+*Output*
+```
+Meow! Meow!
+Eating...
+Bow Bow!
+Eating...
+```
 
