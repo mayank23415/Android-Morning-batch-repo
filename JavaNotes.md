@@ -937,4 +937,108 @@ Eating...
 Bow Bow!
 Eating...
 ```
+***Polymorphism***
+- Means Existing in Multiple Forms
+- Two Types of Polymorphism
+	- Run Time Polymorphism (Method overriding)
+	- Compile Time Polymorphism (Method Overloading)
+
+- Compile Time Polymorphism
+	- If class has multiple Methods of the same name but different number / different type of Parameters, then it is known as Compile time Polymorphism.
+***Example - Compile Time Polymorphism (Overloading)***
+```java
+// Compile Time Polymorphism
+class SumOfNumbers{
+    public void sum(int a, int b){
+        System.out.println(a+b);
+    }
+    
+    public void sum(int a, int b, int c){
+        System.out.println(a+b+c);
+    }
+    
+    public void sum(double a, double b){
+        System.out.println(a+b);
+    }
+}
+
+class Main{
+    public static void main(String args[]){
+        SumOfNumbers n = new SumOfNumbers();
+        n.sum(1,5,7);
+    }
+}
+```
+*Output*
+```
+13
+```
+***Run-Time Polymorphism(Method overriding)***
+- Inorder to implement Method overriding, we need the inheritance implemented.
+- Method overriding means that creating the same method in the child class which is already present in the parent class.
+
+***Example***
+```java
+// Compile Time Polymorphism
+class SumOfNumbers{
+    public void sum(int a, int b){
+        System.out.println("This is from Parent");
+        System.out.println(a+b);
+    }
+
+}
+
+class Addition extends SumOfNumbers{
+    @Override
+    public void sum(int a, int b){
+        System.out.println("This is from child");
+        System.out.println(a*b);
+    }
+}
+
+class Main{
+    public static void main(String args[]){
+        Addition n = new Addition();
+        n.sum(10,20);
+        
+        SumOfNumbers n2 = new SumOfNumbers();
+        n2.sum(10,20);
+    }
+}
+```
+*Output*
+```
+This is from child
+200
+This is from Parent
+30
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
