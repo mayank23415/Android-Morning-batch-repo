@@ -1014,11 +1014,168 @@ This is from Parent
 30
 ```
 
+***Super keyword in Java***
+- ```super``` keyword in java is used to refer to the immediate super class object. 
+- If you create an object for a class B that extends to class A, implicitly there will be an object created for class A. To refer to the implicitly created object, we can use ```super```` keyword.
+
+***Example - Using the super keyword to refer to the immediate parent class Variable*** 
+
+```java
+class A{
+    // This is our Super class
+    int count = 0;
+}
+
+class B extends A{
+    int count = 0;
+    public void showNumber(){
+        super.count = super.count+10;
+        // Access the super class variable
+        System.out.println(super.count);
+        //Acess the current class variable
+        System.out.println(count);
+    }
+}
 
 
+class Main{
+    public static void main (String[] args) {
+        B b = new B();
+        b.count = b.count+1;
+        b.showNumber();
+    }
+}
+    
+```
+*Output*
+```
+10
+1
+```
+
+***Example - using super keyword to access the immediate parent class Method***
+```java
+class A{
+    // This is our Super class
+    int count = 0;
+    public void showNumber(){
+        System.out.println("Naresh Technologies");
+    }
+}
+
+class B extends A{
+    int count = 0;
+    public void showNumber(){
+        System.out.println(count);
+        super.showNumber();
+    }
+}
 
 
+class Main{
+    public static void main (String[] args) {
+        B b = new B();
+        b.count = b.count+1;
+        b.showNumber();
+    }
+}
+    
+```
+*Output*
+```
+1
+Naresh Technologies
+```
 
+***Example - Using super keyword to access the immediate super class's Constructor***
+```java
+class A{
+    int count = 0;
+    A(int c){
+        count = c;
+        System.out.println("Super class constructor is called!");
+    }
+    // This is our Super class
+    public void showNumber(){
+        System.out.println("Naresh Technologies "+count);
+    }
+}
+
+class B extends A{
+    // Whenever you call super() constructor, 
+    // always keep the call in the first line of the sub class constructor.
+    // Otherwise, you will get the following error.
+    // error: call to super must be first statement in constructor
+    B(){
+       super(123);
+       System.out.println("Constructor Invoked!"); 
+    }
+    int count = 0;
+    public void showNumber(){
+        System.out.println(count);
+        super.showNumber();
+    }
+}
+
+
+class Main{
+    public static void main (String[] args) {
+        B b = new B();
+        b.count = b.count+1;
+        b.showNumber();
+    }
+}
+    
+```
+*Output*
+```
+Super class constructor is called!
+Constructor Invoked!
+1
+Naresh Technologies 123
+```
+
+***Two Types of Variables***
+- Class Variable (These are the common variables for all the objects of the class - These variables belong to the class but not the objects (Instances)
+- Instance Variable (These belong to objects(Instances), every object that you create for a class, these instance variables will be copied to the objects)
+
+***Static Keyword***
+- It is used for Memory Management
+- ```static``` keyword can be applied for variables, methods, blocks and nested classes (classes that are defined inside another class).
+- Java Static Variables
+	- variables that are defined with static keyword
+	- If you have a common property that needs to be applied for all the objects that you create for a class - Then, to manage the memory well, you can use a static variable.
+	- You can access the static variables without creating an instance of the class.
+
+```java
+class ObjectCount{
+    // The aim is to calculate the number of objects created for this class. 
+    static int count = 0;
+    ObjectCount(){
+        count++;
+    }
+    
+    public static void display(){
+        System.out.println(count);        
+    }
+}
+
+
+class Main{
+    public static void main (String[] args) {
+        ObjectCount o1 = new ObjectCount();
+        ObjectCount.display();
+        ObjectCount o2 = new ObjectCount();
+        ObjectCount o3 = new ObjectCount();
+        ObjectCount.display();
+    }
+}
+```
+*Output*
+```
+1
+3
+```
 
 
 
