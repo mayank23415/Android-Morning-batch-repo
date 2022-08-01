@@ -1176,17 +1176,298 @@ class Main{
 1
 3
 ```
+***Example***
+```java
+class A{
+    static int count = 0;
+}
 
+public class Main
+{
+	public static void main(String[] args) {
+		A.count = 100;
+		System.out.println(A.count);
+	}
+}
 
+```
+*Output*
+```
+100
+```
+***Java Static Methods***
+- Static methods belong to the class but not the instances(objects) of it. 
+- Static Methods can be accessed directly.
+- ***Static methods*** cannot access non static members of a class. 
+***Example - Static methods cannot access instance variables and instance methods***
+```java
+class A{
+    static int count = 0;
+    boolean status = false;
+    public static void changeStatus(){
+        status = true;
+    }
+}
 
+public class Main
+{
+	public static void main(String[] args) {
+		A.changeStatus();
+	}
+}
+```
+*Output*
+```
+error: non-static variable status cannot be referenced from a static context
+        status = true;
+        ^
+1 error
+```
 
+***Example - Using Static Methods***
+```java
+class A{
+    static int count = 0;
+    boolean status = false;
+    public static void changeStatus(){
+        count = count+10;
+    }
+}
 
+public class Main
+{
+	public static void main(String[] args) {
+		A.changeStatus();
+		A.changeStatus();
+		A.changeStatus();
+		System.out.println(A.count);
+	}
+}
+```
+*output*
+```
+30
+```
 
+***Java Static Blocks***
+- It can be used to initialize the static data members of a class. 
+- It is something that gets executed before the main() method. so if you want to perform any logic before the main method, you can use a static block.
 
+```java
+class Main{
+    // The following is the way to define the static blocks
+    static{
+        System.out.println("Executed before main");
+    }
+    public static void main (String[] args) {
+        System.out.println("Hello");
+    }
+}
+```
+*Output*
+```
+Executed before main
+Hello
+```
 
+```
+Is it possible to execute a java program with out main method ?
+```
+```
+Answer: No, From the latest versions of java, it is not at all possible. But in older versions of java, we use to use java static blocks to do the same
+```
+***Example***
+```java
+class Main{
+    // The following is the way to define the static blocks
+    static{
+        System.out.println("Executed before main");
+    }
+}
+```
+*Output*
+```
+Error: Main method not found in class Main, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+```
 
+***```this``` keyword in Java***
+- ```this``` is a reference variable that refers the current object. 
+- Uses of ```this``` keyword
+	- this can be used to implicitly invoke current class method.
+	- this(...) can be used to invoke the current class constructor.
+	- this can be passed as an argument in a method call.
 
+***Example - using ```this``` keyword to refer to the current class instance variables***
 
+```java
+class Employee{
+    String name;
+    int age;
+    
+    Employee(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+    
+    public void display(){
+        System.out.println(name +" "+ age);
+    }
+}
+
+class Main{
+    public static void main (String[] args) {
+        Employee e = new Employee("Pavan",30);
+        e.display();
+    }
+}
+```
+*Output*
+```
+Pavan 30
+```
+
+***Example - this can be used to access the current objects method***
+```java
+class Boss{
+    public void printDeveloperInfo(){
+        System.out.println("Developer has 8 years of experience!");
+    }
+}
+class Employee extends Boss{
+    String name;
+    int age;
+    
+    Employee(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+    
+    public void display(){
+        System.out.println(name +" "+ age);
+        this.printDeveloperInfo();
+    }
+}
+
+class Main{
+    public static void main (String[] args) {
+        Employee e = new Employee("Pavan",30);
+        e.display();
+    }
+}
+
+```
+*Output*
+```
+Pavan 30
+Developer has 8 years of experience!
+```
+***Example - this can be used to call the current objects constructor***
+```java
+
+class Employee{
+    String name;
+    int age;
+    int salary;
+    Employee(String name, int age){
+        this(name,age,30000);
+    }
+    
+    Employee(String name, int age, int salary){
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
+    
+    public void display(){
+        System.out.println(name +" "+ age+" "+ salary);
+    }
+}
+
+class Main{
+    public static void main (String[] args) {
+        Employee e = new Employee("Pavan",30);
+        e.display();
+    }
+}
+
+```
+
+*Output*
+```
+Pavan 30 30000
+```
+
+***Abstract classes in Java***
+- When you declare a class with ```abstract``` keyword, that is called as an Abstract class. 
+- In abstract classes, along with the normal methods that we declare and define, we can also have abstract methods (Abstract methods are those methods where the body of the method is not defined - Abstract methods can be declared using abstract keyword.)
+
+***Abstraction***
+- Abstraction is the process of hiding the implementation details and also showing the functionality to the user.
+- Two ways to achieve abstraction in Java
+	- Abstract classes (0% to 100%)
+	- Interfaces (100%)
+
+***Imp points to remember***
+- Abstract classes must be inherited by other classes where the definition of the abstract methods of the class will be written.
+- Abstract classes cannot be instantiated (you cannot create objects for abstract classes)
+
+***Example***
+```java
+abstract class RBI{
+    // RBI - Reserve Bank of India
+    // We can have a constructor in an abstract class
+    RBI(){
+        System.out.println("This bank follows RBI Guidelines and is recognised by RBI");
+    }
+    
+    // This is an abstract Method.
+    public abstract int homeLoanInterest(); 
+    
+    // abstract classes can also have methods with definition
+    // if you dont want your subclasses to override a method -
+    // you can use final keyword
+    public final int personalLoanInterest(){
+        return 7;
+    }
+}
+
+class SBI extends RBI{
+    public int homeLoanInterest(){
+        return 17;
+    }
+}
+
+class ICICI extends RBI{
+    public int homeLoanInterest(){
+        return 16;
+    }
+}
+
+class Main{
+    public static void main (String[] args) {
+        SBI s = new SBI();
+        System.out.println(s.personalLoanInterest());
+        ICICI i = new ICICI();
+        System.out.println(i.personalLoanInterest());
+    }
+}
+```
+*Output*
+```
+This bank follows RBI Guidelines and is recognised by RBI
+7
+This bank follows RBI Guidelines and is recognised by RBI
+7
+```
+
+***```Final``` Keyword ***
+- ```final``` keyword restricts the user to perform certain actions. 
+- ```final``` can be used for
+	- Varibles (the value that you assign for final variable, cannot be changed - It becomes a constant)
+	- Methods (final methods cannot be overrided)
+	- class (you cannot inherit the final classes)
 
 
 
