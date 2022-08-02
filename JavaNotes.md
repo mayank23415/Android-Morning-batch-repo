@@ -1621,7 +1621,5 @@ Hai`
 ```
 
 **TWO POINTS TO REMEMBER**
-```
 - You ```implements``` an Interface
 - You ```extends``` a class
-```
