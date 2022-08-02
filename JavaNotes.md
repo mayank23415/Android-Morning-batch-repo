@@ -1469,14 +1469,159 @@ This bank follows RBI Guidelines and is recognised by RBI
 	- Methods (final methods cannot be overrided)
 	- class (you cannot inherit the final classes)
 
+***Example - Final Classes cannot be inherited***
+```java
+public final class Pavan{
+    
+}
+
+public class Kumar extends Pavan{
+    
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
+}
+
+```
+
+*Output*
+```
+error: cannot inherit from final Pavan
+public class Kumar extends Pavan{
+                           ^
+```
+
+***Example - you cannot overwrite values into Final variables***
+```java
+public class Main
+{
+    static final int Count = 0;
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Count = 2;
+	}
+}
+```
+*Output*
+```
+error: cannot assign a value to final variable Count
+		Count = 2;
+		^
+1 error
+```
+
+***Example - final Methods cannot be overrided***
+```java
+class A{
+    public final void display(){
+        System.out.println("This is in A");
+    }
+}
+
+class B extends A{
+    public final void display(){
+        System.out.println("This is in B");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		B b = new B();
+		b.display();
+	}
+}
+```
+*Output*
+```
+error: display() in B cannot override display() in A
+    public final void display(){
+                      ^
+  overridden method is final
+```
+
+***Interfaces in Java***
+- An Interface in java is a blueprint of a class
+- It consists of Static Constants and Abstract Methods.
+- With Interfaces, we can ensure 100% of Abstraction.
+- With interfaces, we can also implement Multiple inheritance(Which is not supported by default) in Java.
+
+***Syntax Of Declaring an Interface***
+```java
+interface InterfaceName{
+// Static Constants
+// Abstract Methods
+}
+```
+
+***EXample***
+```java
+interface NareshTech{
+    // You need not to write abstract keyword before the methods in an interface
+    // because all the methods in an interface are abstract by default.
+    void display();
+}
+
+class A implements NareshTech{
+    public void display(){
+        System.out.println("Hello world!");
+    }
+}
+
+class Main{
+    public static void main (String[] args) {
+        A a = new A();
+        a.display();
+    }
+}
+```
+*Output*
+```
+Hello World!
+```
+
+***Example, Implementing Multiple Inheritance using interfaces in java***
+```java
+interface A{
+    void printMessage();
+}
+
+interface B{
+    void display();
+}
+
+class C implements A, B {
+   public void printMessage(){
+       System.out.println("Hello");
+   }
+   
+   public void display(){
+       System.out.println("Hai`");
+   }
+}
 
 
+class Main{
+    public static void main (String[] args) {
+        C c = new C();
+        c.printMessage();
+        c.display();
+    }
+}
+```
 
+*Output*
+```
+Hello
+Hai`
+```
 
-
-
-
-
-
-
-
+**TWO POINTS TO REMEMBER**
+```
+- You ```implements``` an Interface
+- You ```extends``` a class
+```
