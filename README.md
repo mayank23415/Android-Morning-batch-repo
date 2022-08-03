@@ -16,3 +16,9 @@
 - [Overall Picture to Understand the concept well](https://drive.google.com/file/d/1_YBPSC1hDbb8da8SIr8KATVjtDr6Pzpf/view?usp=sharing)
 - Learn More about TextView [here](https://developer.android.com/reference/android/widget/TextView)
 - Learn More about EditText [here](https://developer.android.com/reference/android/widget/EditText)
+
+### UI Components in Android
+- Radio Buttons can be explored [here](https://developer.android.com/guide/topics/ui/controls/radiobutton)
+- [EditText](https://developer.android.com/reference/android/widget/EditText)
+- [Spinners](https://developer.android.com/guide/topics/ui/controls/spinner#:~:text=Spinners%20provide%20a%20quick%20way,layout%20with%20the%20Spinner%20object.)
+- [Switch](https://developer.android.com/reference/android/widget/Switch#:~:text=A%20Switch%20is%20a%20two,if%20it%20were%20a%20checkbox.)
