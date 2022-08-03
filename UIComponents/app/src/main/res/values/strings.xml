@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UI Components</string>
+    <string-array name="spinner_entries">
+        <item>India</item>
+        <item>USA</item>
+        <item>Canada</item>
+        <item>UK</item>
+        <item>Australia</item>
+        <item>Pak</item>
+    </string-array>
+</resources>
