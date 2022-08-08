@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -20,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Switch fanSwitch;
     private Button submit;
     private TextView result;
+
+    private String gender,nation,fan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +39,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // get the RadioButton Id that is checked.
                 int id = radioGroup.getCheckedRadioButtonId();
                 if(id == R.id.male){
-                    result.setText("MALE");
+                    gender = "Male";
                 }else if(id == R.id.female){
-                    result.setText("FEMALE");
+                    gender = "Female";
                 }else{
-                    result.setText("Prefer Not to Say");
+                    gender = "Prefer Not To Say!";
                 }
             }
         });
@@ -47,13 +51,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 // When the spinner items are selected, we invoke this method
-                String country = adapterView.getItemAtPosition(i).toString();
-                result.setText(country);
+                nation = adapterView.getItemAtPosition(i).toString();
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
+            }
+        });
+        fanSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    fan = "ON";
+                }else{
+                    fan = "OFF";
+                }
             }
         });
     }
@@ -74,6 +87,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // This is the place where your button logic goes in
         String n = pName.getText().toString();
         int a = Integer.parseInt(pAge.getText().toString());
+        result.setText("");
 
+        result.append(n+"\n");
+        result.append(a+"\n");
+        result.append(gender+"\n");
+        result.append(nation+"\n");
+        result.append(fan);
     }
 }
