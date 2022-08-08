@@ -22,3 +22,6 @@
 - [EditText](https://developer.android.com/reference/android/widget/EditText)
 - [Spinners](https://developer.android.com/guide/topics/ui/controls/spinner#:~:text=Spinners%20provide%20a%20quick%20way,layout%20with%20the%20Spinner%20object.)
 - [Switch](https://developer.android.com/reference/android/widget/Switch#:~:text=A%20Switch%20is%20a%20two,if%20it%20were%20a%20checkbox.)
+
+### Menus
+- [Read More](https://developer.android.com/guide/topics/ui/menus) of Menus here.
