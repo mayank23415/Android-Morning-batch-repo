@@ -25,3 +25,11 @@
 
 ### Menus
 - [Read More](https://developer.android.com/guide/topics/ui/menus) of Menus here.
+
+### Intents
+- [Intents](https://developer.android.com/guide/components/intents-filters) documentation
+- [Common Intents](https://developer.android.com/guide/components/intents-common)
+
+### Assignment 
+- Make use of the common intents documentation and try to complete two more common Intents.
+
