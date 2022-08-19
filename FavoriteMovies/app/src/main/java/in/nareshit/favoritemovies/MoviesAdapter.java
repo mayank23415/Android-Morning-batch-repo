@@ -1,12 +1,14 @@
 package in.nareshit.favoritemovies;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -58,6 +60,18 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MoviesView
             iv = itemView.findViewById(R.id.imageView);
             tv1 = itemView.findViewById(R.id.textView_mv);
             tv2 = itemView.findViewById(R.id.textView_an);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getAdapterPosition();
+                    Intent intent = new Intent(context,DetailsActivity.class);
+                    intent.putExtra("POSTER",posters[position]);
+                    intent.putExtra("MOVIE",mNames[position]);
+                    intent.putExtra("ARTIST",aNames[position]);
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }

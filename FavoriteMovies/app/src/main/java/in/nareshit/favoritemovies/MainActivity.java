@@ -1,9 +1,12 @@
 package in.nareshit.favoritemovies;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import android.icu.lang.UCharacter;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerview);
         MoviesAdapter moviesAdapter = new MoviesAdapter(this,posters,mTitles,lActors);
         recyclerView.setAdapter(moviesAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
     }
 
     private void buildData() {
