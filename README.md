@@ -33,3 +33,12 @@
 ### Assignment 
 - Make use of the common intents documentation and try to complete two more common Intents.
 
+### Activity Life Cycle
+- Use the doc to read about [LifeCycle of an Activity](https://developer.android.com/guide/components/activities/activity-lifecycle)
+
+### ListView in android
+- [link](https://developer.android.com/reference/android/widget/ListView)
+
+### RecyclerView in android
+- [Official Doc](https://developer.android.com/jetpack/androidx/releases/recyclerview)
+- [Slides by google Training Team](https://docs.google.com/presentation/d/1tLLYBSGl9d8nHc_88007kTOZvXdSY0oqIRF3APIgm34/edit?usp=drive_web&ouid=110137796523185973640)
