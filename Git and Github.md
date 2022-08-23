@@ -62,9 +62,29 @@ git config user.name
     - This command will create a snapshot in the repository with the files that are presently in the Staging area
 - git log
     - This command shows the history of the commits till the recent in chronological order.
+    - ```git log```
+    - ```git log --oneline``` - Displays all the commits in oneline each.
+    - ```git log --reverse``` - displays all the commits in reverse order (first commit on top)
+- git checkout
+    - This command would essentially take you to the commit that you are interested.
+    - ```git checkout <Commit SHA Key>```
     
+***Working with Remotes***
+    
+    - Create a remote repository 
+        - [github](https://github.com)
+        - [bitbucket](https://bitbucket.org)
+        - [gitlab](https://gitlab.com)
 
-
+    - Create a repository without any initial commits. (Dont create README.MD)
+    - Check for any remotes available on the local system
+    - ```git remote```
+    - Now, add your remote to the local system
+    - ```git remote add <Var Name> https://github.com/tadipavankumarreddy/Experiment1.git```
+    - to push all the changes to the remote system
+        - ```git push <var_name> master
+    
+ 
 
 
 
