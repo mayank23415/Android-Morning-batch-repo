@@ -82,7 +82,7 @@ git config user.name
 - Now, add your remote to the local system
 - ```git remote add <Var Name> https://github.com/tadipavankumarreddy/Experiment1.git```
 - to push all the changes to the remote system
-- ```git push <var_name> master
+- ```git push <var_name> master```
     
  
 
