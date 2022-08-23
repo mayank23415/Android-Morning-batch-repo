@@ -71,18 +71,18 @@ git config user.name
     
 ***Working with Remotes***
     
-    - Create a remote repository 
-        - [github](https://github.com)
-        - [bitbucket](https://bitbucket.org)
-        - [gitlab](https://gitlab.com)
+ - Create a remote repository 
+- [github](https://github.com)
+- [bitbucket](https://bitbucket.org)
+- [gitlab](https://gitlab.com)
 
-    - Create a repository without any initial commits. (Dont create README.MD)
-    - Check for any remotes available on the local system
-    - ```git remote```
-    - Now, add your remote to the local system
-    - ```git remote add <Var Name> https://github.com/tadipavankumarreddy/Experiment1.git```
-    - to push all the changes to the remote system
-        - ```git push <var_name> master
+- Create a repository without any initial commits. (Dont create README.MD)
+- Check for any remotes available on the local system
+- ```git remote```
+- Now, add your remote to the local system
+- ```git remote add <Var Name> https://github.com/tadipavankumarreddy/Experiment1.git```
+- to push all the changes to the remote system
+- ```git push <var_name> master
     
  
 
