@@ -1,3 +1,7 @@
+:grinning:
+
+:wink:
+
 # Heading
 ## Heading 
 ### Heading
@@ -38,5 +42,50 @@ Rahul is a ***very good*** boy.
 ##### Links (How to place them)
 [Developer Website](https://developer.android.com)
 
+> This is highlighted
+
+```This Looks cooler```
+
+# Python Hello World
+
+```python
+print("Hello World!")
+```
+
+# Java Hello World
+```java
+class First{
+   public static void main(String args[]){
+      System.out.println("Hello World!")
+   }
+}
+```
+
+***Who is called the Iron Man of India ?***
+- [ ] Alluri Sitaramaraju
+- [ ] Bhagat Singh
+- [x] Sardar Vallabhai patel
+- [ ] Nehru
+
+#### Create Tables
+
+SNo|State Name|Capital City
+---|---|---
+1|Kashmir|Jammu
+2|Himachal Pradesh|Shimla
+3|West bengal|Kolkata
+
+#### Emojis
+:+1: :sparkles: :camel:
+
+:rocket:
+
+:octocat:
+
+:metal:
+
+[More Emojis](https://github.com/ikatyang/emoji-cheat-sheet#smileys--emotion)
+
 ##### Images
-![Alternate name](https://media.istockphoto.com/photos/cute-pink-bear-doll-with-bow-isolated-on-white-background-with-shadow-picture-id952081702?k=20&m=952081702&s=612x612&w=0&h=NTdnJREV0IbjitgPLH2N2GO8nCAQbGFGWd_fSwR2JDM=)
+![Alternate name](/moviesImages/a.jpg)
+
