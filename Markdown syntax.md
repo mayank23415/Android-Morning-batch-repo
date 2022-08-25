@@ -36,7 +36,7 @@ Rahul is a ***very good*** boy.
 5. Grapes
 
 ##### Links (How to place them)
- [Developer Website](htpps://developer.android.com)
+[Developer Website](https://developer.android.com)
 
 ##### Images
 ![Alternate name](https://media.istockphoto.com/photos/cute-pink-bear-doll-with-bow-isolated-on-white-background-with-shadow-picture-id952081702?k=20&m=952081702&s=612x612&w=0&h=NTdnJREV0IbjitgPLH2N2GO8nCAQbGFGWd_fSwR2JDM=)
