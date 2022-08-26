@@ -42,3 +42,11 @@
 ### RecyclerView in android
 - [Official Doc](https://developer.android.com/jetpack/androidx/releases/recyclerview)
 - [Slides by google Training Team](https://docs.google.com/presentation/d/1tLLYBSGl9d8nHc_88007kTOZvXdSY0oqIRF3APIgm34/edit?usp=drive_web&ouid=110137796523185973640)
+
+### Working in the background
+- Async Task
+https://developers.google.co
+https://github.com/cyberboysumanjay/Inshorts-News-API
+https://jsonformatter.curiousconcept.com/
+https://github.com/public-apis/public-apis
+https://docs.google.com/presentation/d/1A7anDTS8NQCunbxoJnqJqkSHNFCvRIn9moE7Zww-gds/edit#slide=id.g1880535e8d_0_471
