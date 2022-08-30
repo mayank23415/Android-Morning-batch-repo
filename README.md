@@ -50,3 +50,15 @@ https://github.com/cyberboysumanjay/Inshorts-News-API
 https://jsonformatter.curiousconcept.com/
 https://github.com/public-apis/public-apis
 https://docs.google.com/presentation/d/1A7anDTS8NQCunbxoJnqJqkSHNFCvRIn9moE7Zww-gds/edit#slide=id.g1880535e8d_0_471
+
+### Popular Image Loading Libraries for Android
+- [Glide](https://github.com/bumptech/glide)
+- [Picasso](https://square.github.io/picasso/)
+
+### Assignment
+Further Enhance the project ```News inshort``` by following the guidelines below
+  - When the user taps an article, take the user to the details screen where the following things has to  be displayed
+      - ImageView has to be on the top
+      - Title of the news has to be displayed
+      - Content of the news has also to be displayed.
+      
