@@ -60,6 +60,6 @@ Further Enhance the project ```News inshort``` by following the guidelines below
   - When the user taps an article, take the user to the details screen where the following things has to  be displayed
       - ImageView has to be on the top
       - Title of the news has to be displayed
-      - Content of the news has also to be displayed.
+      - Content of the news has also to be displayed.   
 **Once Done with the assignment please put the code on github and share the github link to ```pavankreddy.t@gmail.com```**
       
