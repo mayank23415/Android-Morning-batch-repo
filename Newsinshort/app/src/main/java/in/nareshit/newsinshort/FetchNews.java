@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -16,18 +19,20 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
 public class FetchNews extends AsyncTask<String,Void,String> {
 
     Context context;
-    TextView tv;
+    RecyclerView recyclerView;
     ProgressBar progressBar;
 
-    public FetchNews(Context context, TextView tv, ProgressBar progressBar) {
+    public FetchNews(Context context, RecyclerView recyclerView, ProgressBar progressBar) {
         this.context = context;
-        this.tv = tv;
+        this.recyclerView = recyclerView;
         this.progressBar = progressBar;
     }
 
@@ -62,18 +67,22 @@ public class FetchNews extends AsyncTask<String,Void,String> {
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
+        List<News> list = new ArrayList<>();
         progressBar.setVisibility(View.GONE);
         try {
             JSONObject root_object = new JSONObject(s);
             JSONArray data = root_object.getJSONArray("data");
-            tv.setText("");
             for(int i=0; i<data.length(); i++){
                 JSONObject news = data.getJSONObject(i);
                 String title = news.getString("title");
                 String content = news.getString("content");
-                tv.append(title+"\n");
-                tv.append(content+"\n\n\n");
+                String imageUrl = news.getString("imageUrl");
+                list.add(new News(title,content,imageUrl));
             }
+
+            NewsAdapter newsAdapter = new NewsAdapter(context,list);
+            recyclerView.setAdapter(newsAdapter);
+            recyclerView.setLayoutManager(new LinearLayoutManager(context));
         } catch (Exception e) {
             e.printStackTrace();
         }
