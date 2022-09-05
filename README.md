@@ -66,3 +66,10 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 
 **Volley - An Android Networking Library**   
 [Link to the lib](https://google.github.io/volley/)
+
+**Gson Library - Java serialization and Deserialization library for Android***
+- Using this libraray, you can convert Json data to Java POJO classses and vice-versa
+- [link for the library](https://github.com/google/gson)
+- [Exellent Tutorial for gson](https://futurestud.io/tutorials/gson-getting-started-with-java-json-serialization-deserialization)
+
+***create Model classes easily with the help of [this website](https://www.jsonschema2pojo.org/)***
