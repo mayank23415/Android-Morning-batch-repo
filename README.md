@@ -73,3 +73,7 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 - [Exellent Tutorial for gson](https://futurestud.io/tutorials/gson-getting-started-with-java-json-serialization-deserialization)
 
 ***create Model classes easily with the help of [this website](https://www.jsonschema2pojo.org/)***
+
+***Retrofit*** 
+- [documentation-link](https://square.github.io/retrofit/)
+
