@@ -77,3 +77,17 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 ***Retrofit*** 
 - [documentation-link](https://square.github.io/retrofit/)
 
+***Alert Dialog & overriding Back Button's Behaviour***
+- [Click here](https://developer.android.com/reference/android/app/AlertDialog)
+
+***Tab Navigation - Fragments***
+- [Click Here](https://developer.android.com/guide/navigation/navigation-custom-back)
+
+***Notifications****
+- [Notifications](https://developer.android.com/develop/ui/views/notifications)
+- [Click here for Presentation](https://docs.google.com/presentation/d/1Ch8DeXY5D2xpZ5248x_X-_2eycRW7emzdSHMur32Dg0/edit#slide=id.g3a6358ac69_0_103)
+
+***Broadcast Receivers***
+- [Official Documentation](https://developer.android.com/guide/components/broadcasts)
+- [Presentation](https://docs.google.com/presentation/d/1qF9Yeau7uHIP7_aOHWgPU_RnfxACZzGyAZIzcJWz0R0/edit#slide=id.g3d58933c91_0_73)
+
