@@ -77,6 +77,9 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 ***Retrofit*** 
 - [documentation-link](https://square.github.io/retrofit/)
 
+***Explore OkHttp Library for Networking***
+- [link is here](https://square.github.io/okhttp/)
+
 ***Alert Dialog & overriding Back Button's Behaviour***
 - [Click here](https://developer.android.com/reference/android/app/AlertDialog)
 
