@@ -4,10 +4,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class PowerReceiverBroadcast extends BroadcastReceiver {
 
     ImageView img;
+    public static final String CUSTOM_BROADCAST = "AnyUniqueStringCanBeGivenHere";
 
     public PowerReceiverBroadcast(ImageView img) {
         this.img = img;
@@ -24,6 +26,9 @@ public class PowerReceiverBroadcast extends BroadcastReceiver {
                 break;
             case Intent.ACTION_POWER_DISCONNECTED:
                 img.setImageResource(R.drawable.ic_baseline_battery_alert_24);
+                break;
+            case CUSTOM_BROADCAST:
+                Toast.makeText(context, "RECEIVED", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
