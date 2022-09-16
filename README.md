@@ -94,3 +94,7 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 - [Official Documentation](https://developer.android.com/guide/components/broadcasts)
 - [Presentation](https://docs.google.com/presentation/d/1qF9Yeau7uHIP7_aOHWgPU_RnfxACZzGyAZIzcJWz0R0/edit#slide=id.g3d58933c91_0_73)
 
+***Alarm Manager in Android***
+- [Presentation](https://docs.google.com/presentation/d/1Xz5TVqIsKWR2J1-OdZHrSh3mE52AIAWeVhhVNkVdnQE/edit#slide=id.g18e5d42159_0_473)
+- [Official Doc](https://developer.android.com/reference/android/app/AlarmManager)
+- [Pending Intent](https://developer.android.com/reference/android/app/PendingIntent)
