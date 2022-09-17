@@ -98,3 +98,12 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 - [Presentation](https://docs.google.com/presentation/d/1Xz5TVqIsKWR2J1-OdZHrSh3mE52AIAWeVhhVNkVdnQE/edit#slide=id.g18e5d42159_0_473)
 - [Official Doc](https://developer.android.com/reference/android/app/AlarmManager)
 - [Pending Intent](https://developer.android.com/reference/android/app/PendingIntent)
+
+***Job Scheduler in Android***
+- [Presentation](https://docs.google.com/presentation/d/1jWZ10wsLZTPhTl2jcPpa-PpkIbfJAeoVKfUv-eQoSCk/edit#slide=id.g18e75634d0_0_172) go through from slide 13.
+- [Official doc](https://developer.android.com/reference/android/app/job/JobScheduler)
+
+***Assignment***
+- Deadline - 20th Sep 2022
+- Convert the News Application that is already done into the latest UI
+- Use NavigationDrawer to do it. refer this [link](https://developer.android.com/guide/navigation/navigation-ui?gclid=Cj0KCQjwvZCZBhCiARIsAPXbajvwC5a_KWe8MarIIQwB4TW2XBF3QoSqyEOsCaxLfjn75XOO5GBjZJoaApOeEALw_wcB&gclsrc=aw.ds)
