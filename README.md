@@ -107,3 +107,7 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 - Deadline - 20th Sep 2022
 - Convert the News Application that is already done into the latest UI
 - Use NavigationDrawer to do it. refer this [link](https://developer.android.com/guide/navigation/navigation-ui?gclid=Cj0KCQjwvZCZBhCiARIsAPXbajvwC5a_KWe8MarIIQwB4TW2XBF3QoSqyEOsCaxLfjn75XOO5GBjZJoaApOeEALw_wcB&gclsrc=aw.ds)
+
+***Shared Preferences***
+- [Official Documentation](https://developer.android.com/training/data-storage/shared-preferences)
+- [Presentation Link](https://docs.google.com/presentation/d/1PGCQS6Z4a9c6zWWG8vWgLByxIdy41Hu5cucvZzRVsEI/edit#slide=id.g116d7d9d49_3_13)
