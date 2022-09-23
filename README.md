@@ -119,3 +119,9 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 
 ***Permissions(Requesting the permissions from user)***
 - [Official Doc](https://developer.android.com/guide/topics/permissions/overview)
+
+***External Storage Android***
+- [Official doc](https://developer.android.com/training/data-storage)
+
+***Assignment***
+```Develop an application that captures the picture and stores it in external directory in low quality.```
