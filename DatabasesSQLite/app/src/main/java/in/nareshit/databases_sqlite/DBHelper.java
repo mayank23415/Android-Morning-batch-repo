@@ -2,6 +2,7 @@ package in.nareshit.databases_sqlite;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -40,5 +41,20 @@ public class DBHelper extends SQLiteOpenHelper {
     public void insertData(ContentValues values){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.insert(TABLE_NAME,null,values);
+    }
+
+    public Cursor readData(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("SELECT * from "+TABLE_NAME,null,null);
+    }
+
+    public void updateData(ContentValues values,int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.update(TABLE_NAME,values,COL_0+"="+id,null);
+    }
+
+    public void deleteRow(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM "+TABLE_NAME+" WHERE "+COL_0+" ="+id);
     }
 }
