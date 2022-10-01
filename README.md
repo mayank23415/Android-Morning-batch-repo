@@ -125,3 +125,15 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 
 ***Assignment***
 ```Develop an application that captures the picture and stores it in external directory in low quality.```
+
+***SQLite Databases***
+- [Official Doc](https://developer.android.com/training/data-storage/sqlite)
+- Practice the Queries [here](https://sqliteonline.com)
+
+***Content Providers***
+- [Official Doc](https://developer.android.com/guide/topics/providers/content-provider-basics#:~:text=A%20content%20provider%20manages%20access,using%20a%20provider%20client%20object.)
+
+***Data Binding***
+- [Official Doc](https://developer.android.com/topic/libraries/data-binding)
+- Try Completing the [Codelab](https://developer.android.com/codelabs/android-databinding#0)
+
