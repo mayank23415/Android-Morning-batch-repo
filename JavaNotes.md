@@ -1623,3 +1623,5 @@ Hai`
 **TWO POINTS TO REMEMBER**
 - You ```implements``` an Interface
 - You ```extends``` a class
+
+***End of Essentials of JAVA***
