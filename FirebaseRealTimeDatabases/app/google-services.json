@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "860326126288",
+    "project_id": "fir-demort-47719",
+    "storage_bucket": "fir-demort-47719.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860326126288:android:48b16b9cd35e07e80af4d5",
+        "android_client_info": {
+          "package_name": "in.nareshtechnologies.firebaserealtimedatabases"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860326126288-d86bfq7b44ovqt5ocnj5hp0b6acie2ps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY9YJmsUZTOY9ZCN82Lg9RbPZTNaJDTLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860326126288-d86bfq7b44ovqt5ocnj5hp0b6acie2ps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
