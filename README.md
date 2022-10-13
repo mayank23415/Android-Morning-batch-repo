@@ -177,5 +177,4 @@ private boolean isNetworkConnected() {
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-***capture a pic and save it in external storage***
-![Video](https://youtu.be/nA4XWsG9IPM)
+***capture a pic and save it in external storage*** [Video](https://youtu.be/nA4XWsG9IPM)
