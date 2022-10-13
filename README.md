@@ -161,3 +161,21 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 #### [Learn Kotlin Programming here](https://kotlinlang.org/)
 
 #### [Android Kotlin Developer Fundamentals Course (Self learn - Self paced) course by Google](https://developer.android.com/courses/kotlin-android-fundamentals/overview)
+
+
+***Every Time, you make a network request -> check if internet connection is available with the help of the following code***
+```java
+private boolean isNetworkConnected() {
+    ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+    return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
+}
+```
+***for the above code to run, we need the following permissions declared in manifest file***
+```xml
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+***capture a pic and save it in external storage***
+![Video](https://youtu.be/nA4XWsG9IPM)
