@@ -137,3 +137,27 @@ Further Enhance the project ```News inshort``` by following the guidelines below
 - [Official Doc](https://developer.android.com/topic/libraries/data-binding)
 - Try Completing the [Codelab](https://developer.android.com/codelabs/android-databinding#0)
 
+#### [Permissions](https://developer.android.com/guide/topics/permissions/overview)
+
+#### [Services in Android](https://developer.android.com/guide/components/services)
+
+#### [Media Player](https://developer.android.com/reference/android/media/MediaPlayer)
+
+#### [Data Binding Library - Newest replacement of the deprecated ButterKnife library](https://developer.android.com/topic/libraries/data-binding)
+
+
+#### [View model](https://developer.android.com/topic/libraries/architecture/viewmodel?gclid=Cj0KCQiAzfuNBhCGARIsAD1nu--B6TIZHjrlm6sYcYPe49uE2qdfC30AaNTVZFrd3IwfnmKwp9It8JMaAqnQEALw_wcB&gclsrc=aw.ds#codelab)
+
+#### [Room Database](https://developer.android.com/jetpack/androidx/releases/room?gclid=Cj0KCQiAk4aOBhCTARIsAFWFP9HNxj8t6q9dpezcYE4BEn8VIfH4mG3G9zg-BdOUrFRSsVqioqVV0DoaAotbEALw_wcB&gclsrc=aw.ds)
+
+#### [Firebase Real Time data bases and other related docs](https://firebase.google.com/docs/database/)
+
+#### [Google Maps](https://developers.google.com/maps/documentation/)
+
+#### [Google Places API Integration - Nearby Places](https://developers.google.com/maps/documentation/places/web-service/overview)
+
+#### [Google AdMob Account](https://developers.google.com/admob/) - Hit on Android icon to get Started
+
+#### [Learn Kotlin Programming here](https://kotlinlang.org/)
+
+#### [Android Kotlin Developer Fundamentals Course (Self learn - Self paced) course by Google](https://developer.android.com/courses/kotlin-android-fundamentals/overview)
